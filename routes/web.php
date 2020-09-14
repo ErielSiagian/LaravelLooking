@@ -11,8 +11,11 @@
 |
 */
 
-Route::get('/', function () {
 
-	$website = ["name" => "bigdinerofficial.com", "desc" => "Best News Evaaaa"];
-    return view('welcome',$website);
-});
+
+	
+
+Route::get('/','HomeController@index');
+Route::get('/website/{id}','HomeController@details');
+
+

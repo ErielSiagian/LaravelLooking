@@ -16,21 +16,8 @@
                 <div class="title m-b-md">
                     <img src="/img/picture.png" alt="random pictures"><br>
                     Looking.com<br>
-                    
                 </div>
-
-
-                @foreach($websites as $p)
-
-                    <div>
-                        What you can do to {{$p['type']}} is all in {{$p['name']}} website!
-                    
-                    @if($loop->first)
-                        <span>This webistes is for idiots</span>
-                    @endif
-                    </div>
-
-                @endforeach
+                <div><p>Welcome! Your ID is {{$id}}</p></div>
             </div>
 </div>
 @endsection
