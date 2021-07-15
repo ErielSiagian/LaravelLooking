@@ -14,18 +14,19 @@ class HomeController extends Controller
 			];
 
 
-	    	return view('welcome',[
+
+	    	return view('current.welcome',[
 	  		'websites' => $websites,
+	  		'name' => request('name'),
+	  		'age' => request('age')
 		]);
 	}
 
 	public function details($id){
-	   return view('details',['id' => $id]);
+	   return view('current.details',['id' => $id]);
 	}
 
-
-
-
-
-
+	public function udemy(){
+	   return view('htmludemy.index');
+	}
 }

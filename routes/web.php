@@ -14,8 +14,28 @@
 
 
 	
-
+//Laravel Looking
 Route::get('/','HomeController@index');
-Route::get('/website/{id}','HomeController@details');
+
+Route::get('/{id}', function($id){
+
+		return view('current.details',['id'=> $id]);
+
+});
+
+
+
+//UDEMYHTML
+Route::get('/udemyhtml','HomeController@udemy');
+
+
+//ninja ECMAScript
+
+
+//ninja ECMAjQuery
+
+
+
+
 
 
