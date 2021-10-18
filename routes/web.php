@@ -12,27 +12,22 @@
 */
 
 
-
-	
-//Laravel Looking
-Route::get('/','HomeController@index');
-
-Route::get('/{id}', function($id){
-
-		return view('current.details',['id'=> $id]);
-
-});
-
-
-
 //UDEMYHTML
 Route::get('/udemyhtml','HomeController@udemy');
-
-
 //ninja ECMAScript
-
-
+Route::get('/script','HomeController@ecma');
 //ninja ECMAjQuery
+Route::get('/jquery','HomeController@jquery');
+
+
+
+//Laravel Looking
+Route::get('/','HomeController@index');
+Route::get('/{id}','WebsiteController@index');
+
+
+
+
 
 
 
